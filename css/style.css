@@ -1,0 +1,49 @@
+a {
+    color: white;
+}
+    a:hover {
+        color: #FF0;
+        text-decoration: none;
+    }
+    
+    a:focus {
+        outline: none;
+    }
+
+.col-md-2 {
+    padding: 0px;
+}
+
+button {
+    width: 100%;
+}
+
+.navButton {
+    color: #FF0;
+    border: 0px;
+}
+
+img {
+    width: 100%;
+}
+
+body {
+    background-color: #19b2ff; /* bg blue */
+    background-image: url(img/bg.png); /* White gradient circle on bg blue */
+    background-repeat: no-repeat;
+    background-size: cover; /* Stretching bg to fill width */
+    max-width: 1400px; /* Setting max page width */
+    margin-left: auto;
+    margin-right: auto;
+    font-family: Sans-serif, Arial, "Sans-serif";
+    color: white;
+}
+
+#headerLinks {
+    text-align: center;
+}
+
+#footer {
+    text-align: center;
+}
+}
