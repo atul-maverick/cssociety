@@ -12,56 +12,71 @@
 
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
-
   </head>
+  
   <body>
-
     <div class="container-fluid">
+	
 	<div class="row">
 		<div class="col-md-12">
+			<br>
+			
 			<div class="row" id="headerLinks">
 				<div class="col-md-1">
 				</div>
+				
 				<div class="col-md-2">
 					<a href="http://www.ieee.org">
 						IEEE
 					</a>
 				</div>
+				
 				<div class="col-md-2">
 					<a href="http://ieeexplore.ieee.org">
 						Xplore Digital Library
 					</a>
 				</div>
+				
 				<div class="col-md-2">
 					<a href="http://standards.ieee.org">
 						Standards Association
 					</a>
 				</div>
+				
 				<div class="col-md-2">
 					<a href="http://spectrum.ieee.org">
 						Spectrum
 					</a>
 				</div>
+				
 				<div class="col-md-2">
 					Resources
 				</div>
+				
 				<div class="col-md-1">
 				</div>
 			</div>
-			<div class="row">
+			
+			<br>
+			
+			<div class="row" id="header">
 				<div class="col-md-1">
 				</div>
+				
 				<div class="col-md-8">
 					<h2>
-						The University of Texas at Arlington IEEE
+						The University of Texas at Arlington IEEE CS
 					</h2>
 				</div>
+				
 				<div class="col-md-3">
 					<a href="index.html">
-						<img alt="UTA IEEE CS Logo" src="img/logo.png">
+						<img alt="UTA IEEE CS Logo" src="img/logo.png" 
+								id="logo">
 					</a>
 				</div>
-				<div>
+				
+				<div class="borderWhite">
 					<div class="col-md-2">
 						<button onclick="display('welcome')">
 							Welcome
@@ -94,6 +109,7 @@
 					</div>
 				</div>
 			</div>
+			
 			<div class="carousel slide" id="carousel-70970">
 				<ol class="carousel-indicators">
 					<li class="active" data-slide-to="0" data-target="#carousel-70970">
@@ -141,12 +157,81 @@
 			</div>
 		</div>
 	</div>
-	<div class="row">
+	
+	<br>
+	
+	<div class="row" id="content">
 		<div class="col-md-2">
+			<button class="navButtonVertical" disabled>
+				Navigation
+			</button>
+			
+			<button class="navButtonVertical" onclick="display('Welcome')">
+				Welcome
+			</button>
+			
+			<button class="navButtonVertical" onclick="display('About')">
+				About
+			</button>
+			
+			<button class="navButtonVertical" onclick="display('Organization')">
+				Organization
+			</button>
+			
+			<button class="navButtonVertical" onclick="display('Events')">
+				Events
+			</button>
+			
+			<button class="navButtonVertical" onclick="display('Calender')">
+				Calender
+			</button>
+			
+			<button class="navButtonVertical" onclick="display('Contact')">
+				Contact
+			</button>
 		</div>
-		<div class="col-md-8">
-		</div>
+		
+		<table class="col-md-8">
+			<tr class="page" id="Welcome">
+				<td>
+					Welcome Page
+				</td>
+			</tr>
+			
+			<tr class="page" id="About">
+				<td>
+					About Page
+				</td>
+			</tr>
+			
+			<tr class="page" id="Organization">
+				<td>
+					Organization Page
+				</td>
+			</tr>
+			
+			<tr class="page" id="Events">
+				<td>
+					Events Page
+				</td>
+			</tr>
+			
+			<tr class="page" id="Calender">
+				<td>
+					Calender Page
+				</td>
+			</tr>
+			
+			<tr class="page" id="Contact">
+				<td>
+					Contact Page
+				</td>
+			</tr>
+		</table>
+		
 		<div class="col-md-2">
+			Poll
+			<br>Placeholder
 		</div>
 	</div>
 	<div class="row" id="footer">
@@ -158,8 +243,9 @@
 	</div>
 </div>
 
-    <script src="js/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/scripts.js"></script>
-  </body>
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/scripts.js"></script>
+<script src="script.js"></script>
+</body>
 </html>

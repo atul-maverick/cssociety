@@ -36,8 +36,8 @@ var landingPage = function() {
     console.log("JavaScript loaded");
     
     // Updating and showing landing page
-    document.getElementById("landing").style.visibility = "visible";
-    currentContent = "landing";
+    document.getElementById("Welcome").style.visibility = "visible";
+    currentContent = "Welcome";
 };
 
 // Setting load time function

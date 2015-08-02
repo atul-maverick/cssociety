@@ -1,15 +1,3 @@
-a {
-    color: white;
-}
-    a:hover {
-        color: #FF0;
-        text-decoration: none;
-    }
-    
-    a:focus {
-        outline: none;
-    }
-
 .col-md-2 {
     padding: 0px;
 }
@@ -19,7 +7,7 @@ button {
 }
 
 .navButton {
-    color: #FF0;
+    color: blue;
     border: 0px;
 }
 
@@ -29,21 +17,84 @@ img {
 
 body {
     background-color: #19b2ff; /* bg blue */
-    background-image: url(img/bg.png); /* White gradient circle on bg blue */
+    background-image: url(/img/bg.png); /* White gradient circle on bg blue */
     background-repeat: no-repeat;
     background-size: cover; /* Stretching bg to fill width */
     max-width: 1400px; /* Setting max page width */
     margin-left: auto;
     margin-right: auto;
     font-family: Sans-serif, Arial, "Sans-serif";
-    color: white;
+    color: blue;
 }
 
-#headerLinks {
-    text-align: center;
+#header {
+    color: white;
+    background: RGBa(200, 200, 200, 0.2); /* transparent */
 }
+    #logo {
+        max-width: 320px;
+    }
+    
+    /* Links at the top of the page */
+    #headerLinks {
+        color: black;
+        text-align: center;
+    }
+        a {
+            color: black;
+            float: left;
+        }
+            a:hover {
+                color: #b3c033; /* CS green */
+                text-decoration: none;
+            }
+            
+            a:focus {
+                outline: none;
+            }
+    
+    /* Navigation bar below the logo */
+    #header button {
+        background: RGBa(200, 200, 200, 0.4); /* light gray */
+        color: #033;
+        border: 1px solid #CCC;
+        border-style: none solid;
+        float: left;
+        max-width: 230px;
+        height: 40px;
+    }
+        #header button:hover {
+            background: RGBa(200, 200, 200, 0.8); /* CS green */
+        }
+
+#content {
+    background: RGBa(200, 200, 200, 0.4); /* transparent */
+}
+    .row {
+        margin: 0px;
+    }
+    
+    .col-md-12 {
+        padding: 0px;
+    }
+    
+    .navButtonVertical {
+        max-width: 213px;
+    }
+    
+    table {
+        width: 100%;
+        border-radius: 0px;
+    }
+        .page {
+            width: 100%;
+            visibility: collapse;
+            background: black;
+        }
 
 #footer {
+    color: black;
     text-align: center;
 }
-}
+
+
