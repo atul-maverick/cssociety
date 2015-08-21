@@ -2,15 +2,6 @@
     padding: 0px;
 }
 
-button {
-    width: 100%;
-}
-
-.navButton {
-    color: blue;
-    border: 0px;
-}
-
 img {
     width: 100%;
 }
@@ -29,7 +20,6 @@ body {
 
 #header {
     color: white;
-    background: RGBa(200, 200, 200, 0.2); /* transparent */
 }
     #logo {
         max-width: 320px;
@@ -53,47 +43,67 @@ body {
                 outline: none;
             }
     
-    /* Navigation bar below the logo */
-    #header button {
-        background: RGBa(200, 200, 200, 0.4); /* light gray */
-        color: #033;
-        border: 1px solid #CCC;
-        border-style: none solid;
+    /* Navigation at the top of the page */
+    .navButtonHorizontal {
+        width: 100%;
+        max-width: 229px;
+    	background: -webkit-gradient(linear, left top, left bottom, from(#FFF), to(#BBB));
+    	background: -moz-linear-gradient(top, #FFF, #BBB);
+        color: #555;
         float: left;
-        max-width: 230px;
         height: 40px;
+    border: 0px;
     }
-        #header button:hover {
-            background: RGBa(200, 200, 200, 0.8); /* CS green */
+        .navButtonHorizontal:hover {
+            background: #CCC;
         }
 
-#content {
-    background: RGBa(200, 200, 200, 0.4); /* transparent */
+.row {
+    margin: 0px;
 }
-    .row {
-        margin: 0px;
+
+.col-md-12 {
+    padding: 0px;
+}
+
+/* Vertical navigation bar below slideshow */
+#navVertical {
     }
-    
-    .col-md-12 {
-        padding: 0px;
-    }
-    
     .navButtonVertical {
-        max-width: 213px;
+        width: 96%;
+        color: #333;
+        border: 0px;
+        padding: 2%;
+    	background: -webkit-gradient(linear, left top, left bottom, from(#CCC), to(#AAA));
+    	background: -moz-linear-gradient(top, #DDD, #BBB);
     }
-    
-    table {
-        width: 100%;
-        border-radius: 0px;
-    }
-        .page {
-            width: 100%;
-            visibility: collapse;
-            background: black;
+        .navButtonVertical:hover {
+            background: #BBB;
         }
+
+/* Content of pages */
+table {
+    width: 100%;
+    border-radius: 0px;
+}
+    .page {
+        width: 100%;
+        vertical-align: top;
+        height: 500px;
+        visibility: collapse;
+        color: #FFF;
+    }
+
+#poll {
+    color: #333;
+}
+    #poll button {
+        position: absolute;
+        right: 50%;
+    }
 
 #footer {
-    color: black;
+    color: #CCC;
     text-align: center;
 }
 
