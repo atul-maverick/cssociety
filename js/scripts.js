@@ -9,6 +9,7 @@ var hide = function(contentId) {
     
     // Hiding input content
     document.getElementById(contentId).style.visibility = "collapse";
+    document.getElementById(contentId).style.display = "none";
 };
 
 // Hides current content, updates it, and then shows the inputed content
@@ -26,6 +27,7 @@ var display = function(contentId) {
         
         // Showing input content
         document.getElementById(contentId).style.visibility = "visible";
+        document.getElementById(contentId).style.display = "table";
     }
 }
 
@@ -37,6 +39,7 @@ var landingPage = function() {
     
     // Updating and showing landing page
     document.getElementById("Welcome").style.visibility = "visible";
+    document.getElementById("Welcome").style.display = "table";
     currentContent = "Welcome";
 };
 
